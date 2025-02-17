@@ -24,4 +24,4 @@ time.sleep(3)
 alert.accept()   # Принимаем  alert
 
 time.sleep(3)
-
+#
