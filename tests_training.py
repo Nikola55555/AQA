@@ -12,12 +12,14 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
 
 
-SELECT_LOCATOR = ("xpath", "//input[@id='userName']")
+SELECT_LOCATOR = ("xpath", "//button[text()='Add Element']")
 
 
-driver.get('https://demoqa.com/text-box')
-
-FULL_NAME = driver.find_element(*SELECT_LOCATOR)
-
-FULL_NAME.send_keys('Николай')
+driver.get('https://the-internet.herokuapp.com/add_remove_elements/')
+time.sleep(3)
+add_element = driver.find_element(*SELECT_LOCATOR).click()
+time.sleep(3)
+add_element2 = driver.find_element(*SELECT_LOCATOR).click()
+time.sleep(3)
+add_element3 = driver.find_element(*SELECT_LOCATOR).click()
 time.sleep(3)
