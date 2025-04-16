@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 
 
 chrome_options = webdriver.ChromeOptions()
-chrome_options.page_load_strategy = 'eager'  # Указываем стратегиюзагрузки страницы (normal, eager)
+chrome_options.page_load_strategy = 'eager'  # Указываем стратегию загрузки страницы (normal, eager)
 #chrome_options.add_argument('--headless') # Включение опции безголового режима
 # chrome_options.add_argument('--incognito') # Включение режима Инкогнито
 # chrome_options.add_argument('--ignore-certificate-errors') # Включение опции игнорирования сертификатов

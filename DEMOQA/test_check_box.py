@@ -19,7 +19,8 @@ print(driver.find_element(*CHECK_BOX_HOME_STATUS).is_selected())
 lable = driver.find_element(*CHECK_BOX_HOME_ACTION).click()
 
 print(driver.find_element(*CHECK_BOX_HOME_STATUS).is_selected())
-
+ 
+ 
 
 
 time.sleep(15)
